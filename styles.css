@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.app{
+}
+.active{
+    color: #ffffff;
+    background-color: #000000;
+}
+.active-link span{
+    font-weight: bold;
+}
+.content-container{
+    width: 100%;
+}
+.div-flex{
+    display: flex;
+}
+.header{
+    height: 60px;
+    justify-content: space-between;
+    padding: 1% 2%;
+    width: 100%;
+}
+.header-center{
+    width: 50%;
+}
+.header-left{
+}
+.header-left button{
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+.header-right{
+    align-items: center;
+    text-align: center;
+}
+.header-right button{
+    margin-right: 20px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+.hidden{
+    display: none;
+}
+.icon-no-border{
+    border: none;
+    background: transparent;
+}
+.logo{
+    max-height: 100px;
+    background-color: transparent;
+    max-width: 100px;
+}
+.logo-link{
+}
+.microphone-btn{
+    border: none;
+    width: 55px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: fixed;
+}
+.search-bar{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.search-box{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+}
+.search-btn{
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+.search-btn span{
+    height: 100%;
+}
+.scroll-menu{
+    height: 99vh;
+}
+.toggle-btn{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.user-image{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+/*Sidebar*/
+.sidebar{
+    background-color: white;
+    position: sticky;
+    min-width: 100px;
+    width: 100px;
+    height: 100%;
+    padding: 0.5%;
+}
+.large-sidebar{
+    background-color: white;
+    position: fixed;
+    min-width: 200px;
+    width: 200px;
+   /* height: 100%;*/
+    padding: 0.5%;
+    z-index: 3;
+}
+.links{
+    display: grid;
+    width: 100%;
+    padding: 5px 0;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 8px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.large-links{
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.links span{
+    height: 25px;
+    margin: 0;
+}
+.large-links span{
+    margin: 10px;
+}
+.scroll-container{
+    overflow-y: scroll;
+}
+.user-setting-link{
+    alignment-baseline: center;
+    padding: 10px 20px;
+    text-align: left;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.user-setting-link:hover{
+    background: rgba(0,0,0,0.1);
+}
+/*Content*/
+.content{
+    height: 100%;
+    padding: 0.5%;
+    width: 100%;
+}
+/*Filters*/
+.filters{
+    margin: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+filters button{
+    background: #f0f0f0;
+    color: #242424;
+}
+.filter-options{
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 1px solid #dbdbdb;
+    height: 30px;
+    min-width: 50px;
+    margin-right: 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.filter-options:hover{
+    background: rgba(0,0,0,0.2);
+}
+/*Content*/
+.content{
+    display: flex;
+    max-width: 100%;
+}
+.info-container{
+    margin-left: 20px;
+}
+.videos-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    /*grid-template-columns: auto auto auto ;*/
+}
+.vid-list{
+    width: 100%;
+    margin-left: 20px;
+}
+.thumbnail{
+    border-radius: 30px;
+    object-fit: contain;
+    width: 100%;
+}
+.user-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.link-video{
+    color: black;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*User info*/
+
+.account-header{
+    justify-content: flex-start;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+.account-header img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.account-header div{
+    margin: 10px;
+}
+.account-header a{
+    text-decoration: none;
+    color: blue;
+}
+.account-body{
+    max-height: 300px;
+}
+.section-user-option{
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: #E5E5E5;
+    padding: 8px 2px;
+}
+.section{
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: #E5E5E5;
+    padding: 8px 2px;
+}
+.user-info-container{
+    min-width: 300px;
+    margin: 10px;
+    outline: none;
+    box-sizing: border-box;
+    max-width: 300px;
+    max-height: 631px;
+    z-index: 10;
+    position: fixed;
+    left: 69%;
+    top: 11px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .1);
+}
+/*notification info*/
+.notification-info-container{
+    min-width: 300px;
+    margin: 10px;
+    outline: none;
+    box-sizing: border-box;
+    max-width: 300px;
+    max-height: 631px;
+    z-index: 10;
+    position: absolute;
+    left: 65%;
+    top: 11px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .1);
+}
+.notification-header{
+
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* thumbnail video*/
+.vid-list .thumbnail-video{
+    width: 95%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.play-container{
+    position: relative;
+}
+#channel-container {
+    text-align: left;
+}
