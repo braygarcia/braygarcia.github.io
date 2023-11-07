@@ -194,45 +194,47 @@
                 </div>
             </form>
         </div>
-        <div class="header-right">
+        <div class="header-right div-flex">
             <button class="icon-no-border">
                 <span class="material-symbols-outlined">video_camera_back</span>
             </button>
-            <div class="notification-info-container hidden">
-                <div class="notification-header div-flex">
-                    <p>Notificaciones</p>
-                    <span class="material-symbols-outlined">settings</span>
-                </div>
-                <div class="account-body scroll-container">
-                    <div class="notification-item div-flex">
-                        <img alt="User Image"
-                             src="https://yt3.ggpht.com/yti/ADpuP3OJHblXPPR7NThaqNU-HYmq1_vLlcjHlJ8ej_hYw-g=s88-c-k-c0x00ffffff-no-rj"
-                             class="user-image">
-                        <div>
-                            <p>Brayan Garcia subió El lado oscuro de la fuerza</p>
-                            <p>Hace 4 horas</p>
-                        </div>
-                        <img alt="User Image"
-                             src="https://yt3.ggpht.com/yti/ADpuP3OJHblXPPR7NThaqNU-HYmq1_vLlcjHlJ8ej_hYw-g=s88-c-k-c0x00ffffff-no-rj"
-                             class="min-thumbnail">
+            <div class="notification-container">
+                <button onclick="openNotificationModal()" class="icon-no-border">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+                <div class="notification-info-container hidden">
+                    <div class="notification-header div-flex">
+                        <p>Notificaciones</p>
+                        <span class="material-symbols-outlined">settings</span>
                     </div>
-                    <div class="notification-item div-flex">
-                        <img alt="User Image"
-                             src="https://yt3.ggpht.com/yti/ADpuP3OJHblXPPR7NThaqNU-HYmq1_vLlcjHlJ8ej_hYw-g=s88-c-k-c0x00ffffff-no-rj"
-                             class="user-image">
-                        <div>
-                            <p>Brayan Garcia subió El lado oscuro de la fuerza</p>
-                            <p>Hace 4 horas</p>
+                    <div class="notification-body scroll-container">
+                        <div class="notification-item div-flex">
+                            <img alt="User Image"
+                                 src="https://yt3.ggpht.com/yti/ADpuP3OJHblXPPR7NThaqNU-HYmq1_vLlcjHlJ8ej_hYw-g=s88-c-k-c0x00ffffff-no-rj"
+                                 class="user-image">
+                            <div class="notification-description">
+                                <p>Brayan Garcia subió El lado oscuro de la fuerza</p>
+                                <span>Hace 4 horas</span>
+                            </div>
+                            <img alt="User Image"
+                                 src="https://i.ytimg.com/vi/5wPPJar_2AA/default.jpg"
+                                 class="min-thumbnail">
                         </div>
-                        <img alt="User Image"
-                             src="https://yt3.ggpht.com/yti/ADpuP3OJHblXPPR7NThaqNU-HYmq1_vLlcjHlJ8ej_hYw-g=s88-c-k-c0x00ffffff-no-rj"
-                             class="min-thumbnail">
+                        <div class="notification-item div-flex">
+                            <img alt="User Image"
+                                 src="https://yt3.ggpht.com/yti/ADpuP3OJHblXPPR7NThaqNU-HYmq1_vLlcjHlJ8ej_hYw-g=s88-c-k-c0x00ffffff-no-rj"
+                                 class="user-image">
+                            <div class="notification-description">
+                                <p>Brayan Garcia subió El lado oscuro de la fuerza</p>
+                                <span>Hace 4 horas</span>
+                            </div>
+                            <img alt="User Image"
+                                 src="https://i.ytimg.com/vi/5wPPJar_2AA/default.jpg"
+                                 class="min-thumbnail">
+                        </div>
                     </div>
                 </div>
             </div>
-            <button onclick="openNotificationModal()" class="icon-no-border">
-                <span class="material-symbols-outlined">notifications</span>
-            </button>
             <div class="user-info-container hidden">
                 <div class="account-header div-flex">
                     <img alt="User Image"
@@ -338,7 +340,7 @@
             </a>
         </div>
         <div class="content-container">
-            <nav class="filters">
+            <div class="filters">
                 <button onclick="setActiveTag()" class="filter-options active">All</button>
                 <button onclick="setActiveTag()" class="filter-options">ReactJS</button>
                 <button onclick="setActiveTag()" class="filter-options">Angular</button>
@@ -351,7 +353,7 @@
                 <button onclick="setActiveTag()" class="filter-options">Springboot</button>
                 <button onclick="setActiveTag()" class="filter-options">NodeJS</button>
                 <button onclick="setActiveTag()" class="filter-options">C#</button>
-            </nav>
+            </div>
             <div class="content">
                 <div class="videos-container">
                 </div>

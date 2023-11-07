@@ -1,4 +1,5 @@
 let videos;
+const APIKey = "AIzaSyBq5oL4Waq3DfBSp9VH7gvXSKf3VQuU80w";
 const element= document.querySelector(".videos-container");
 const videosData = [
     {
@@ -682,16 +683,20 @@ const videosData = [
         }
     }
 ]
-async function getData(){
-    try{
-        // const response =  await fetch("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=messi&type=video&key=AIzaSyBSwBidJQYx2_cC1UuZptl07HPetJ24iTU");
-        // data = await response.json();
-        //  loadVideos(data.items);
-         loadVideos(videosData);
-    }catch (error){
-        console.log(error);
-    }
+async function loadSearchVideos(keyword){
+    const response =  await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${keyword}&type=video&key=${APIKey}`);
+    let data = await response.json();
+    return  data.items
 }
+ async function getData() {
+     try {
+         let videos = await loadSearchVideos();
+         //loadVideos(videos);
+         loadVideos(videosData);
+     } catch (error) {
+         console.log(error);
+     }
+ }
 async function searchVideos(e){
     try{
         e.preventDefault();
