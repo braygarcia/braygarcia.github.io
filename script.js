@@ -46,6 +46,10 @@ function  openNotificationModal(){
     const userInfoDiv = document.querySelector(".notification-info-container")
     userInfoDiv.classList.toggle("hidden");
 }
+function  openCreatorModal(){
+    const userInfoDiv = document.querySelector(".creator-info-container")
+    userInfoDiv.classList.toggle("hidden");
+}
 async function setActiveTag() {
     document.querySelector(".active").classList.remove("active");
     event.target.classList.add("active");
