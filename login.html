@@ -32,18 +32,10 @@
                 function(err) { console.error("Error loading GAPI client for API", err); });
     }
     // Make sure the client is loaded and sign-in is complete before calling this method.
-    function execute() {
-        return gapi.client.youtube.videos.list({
-            "part": [
-                "snippet,contentDetails,statistics"
-            ],
-            "myRating": "like"
-        })
-            .then(function(response) {
-                    // Handle the results here (response.result has the parsed body).
-                    console.log("Response", response);
-                },
-                function(err) { console.error("Execute error", err); });
+    async function execute() {
+        const response = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true&key=AIzaSyBq5oL4Waq3DfBSp9VH7gvXSKf3VQuU80w`);
+        let data = await response.json();
+        console.log(data.items);
     }
     gapi.load("client:auth2", function() {
         gapi.auth2.init({client_id: "1017259557570-rgvu74cd2g96g452j4k0qe6cfcgj50m4.apps.googleusercontent.com"});
