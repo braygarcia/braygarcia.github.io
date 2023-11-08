@@ -404,6 +404,29 @@ filters button{
 #channel-container {
     text-align: left;
 }
+/*video css*/
+.video-container{
+    width: 80%;
+    height: 80%;
+}
+.Video-player{
+    width: 100%;
+    height: 100%;
+}
+.related-content{
+    width: 20%;
+    height:100%
+}
+.subscription-button{
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 1px solid #dbdbdb;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
 @media only screen and (max-width: 800px) {
     .sidebar {
         display: none;
